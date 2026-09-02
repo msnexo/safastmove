@@ -58,7 +58,9 @@
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wohnungsauflösung", "serviceType": "Wohnungsauflösung" } },
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Nachlassauflösung", "serviceType": "Nachlassauflösung" } },
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Umzug", "serviceType": "Umzug" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kurierdienst", "serviceType": "Kurierdienst" } }
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Möbeltransport", "serviceType": "Möbeltransport" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kurierdienst", "serviceType": "Kurierdienst" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Firmenumzug", "serviceType": "Firmenumzug" } }
   ]
 }
 </script>
@@ -115,7 +117,8 @@
       <img src="images/SALogo-transparent.png" alt="FastMove Logo" class="brand-logo">
     </a>
     <nav class="main-nav" id="mainNav">
-      <a href="#entruempelung-leistungen" class="nav-link">Leistungen</a>
+      <a href="#entruempelung-leistungen" class="nav-link">Entrümpelung</a>
+      <a href="#transport" class="nav-link">Transport</a>
       <a href="#ablauf" class="nav-link">Ablauf &amp; Kosten</a>
       <a href="#bewertungen" class="nav-link">Bewertungen</a>
       <a href="#faq" class="nav-link">FAQ</a>
@@ -375,7 +378,7 @@
     <div class="section-head reveal">
       <span class="kicker">Meine Leistungen</span>
       <h2>Entrümpelung – unsere Spezialität</h2>
-      <p class="section-sub">Dazu Umzug &amp; Kurierdienst aus einer Hand: schnell, zuverlässig, stressfrei.</p>
+      <p class="section-sub">Unser Schwerpunkt – dazu Umzug, Möbeltransport und Lieferungen aus einer Hand.</p>
     </div>
 
     <!-- Service 1 -->
@@ -402,21 +405,69 @@
     </div>
   </div>
 
+</section>
+
+<!-- ===== TRANSPORT & LIEFERUNG ===== -->
+<section class="transport" id="transport">
   <div class="container">
-    <div class="secondary-services-head reveal">
-      <h3>Weitere Leistungen aus einer Hand</h3>
-      <p>Dazu bieten wir Umzug &amp; Kurierdienst – praktisch, wenn bei der Entrümpelung auch noch etwas transportiert werden soll.</p>
+    <div class="section-head reveal">
+      <span class="kicker kicker-light">Zweites Standbein</span>
+      <h2>Nicht alles muss weg –<br><span class="text-glow">manches nur woanders hin.</span></h2>
+      <p class="section-sub">Entrümpelung ist unsere Spezialität – aber unsere Fahrzeuge stehen danach nicht still. Umzug, Möbeltransport und Lieferungen fahren wir mit demselben Team, denselben Fahrzeugen und demselben Festpreis-Prinzip.</p>
     </div>
-    <div class="secondary-services-grid">
-      <div class="secondary-service-card reveal" id="umzug">
-        <h4>Umzug</h4>
-        <p>Planung, Verpacken, Möbeltransport &amp; Montage – stressfrei und termingerecht.</p>
-        <a href="https://wa.me/491775792111?text=Hallo%20FastMove%2C%20ich%20interessiere%20mich%20f%C3%BCr%20einen%20Umzug." target="_blank" rel="noopener" class="secondary-service-link">Umzug anfragen →</a>
-      </div>
-      <div class="secondary-service-card reveal" id="kurierdienst">
-        <h4>Kurierdienst</h4>
-        <p>Dokumente, Pakete &amp; Sondertransporte – schnell, diskret und termintreu.</p>
-        <a href="https://wa.me/491775792111?text=Hallo%20FastMove%2C%20ich%20interessiere%20mich%20f%C3%BCr%20den%20Kurierdienst." target="_blank" rel="noopener" class="secondary-service-link">Sendung anfragen →</a>
+
+    <div class="transport-layout">
+      <!-- Panel: Fuhrpark -->
+      <aside class="transport-panel reveal">
+        <img src="images/service-umzug.jpg" alt="FastMove Transporter im Einsatz" class="transport-panel-img" loading="lazy">
+        <div class="transport-panel-body">
+          <span class="transport-panel-kicker">Alles aus einer Hand</span>
+          <h3>Ein Anruf reicht<br>für beides.</h3>
+          <p>Viele Kunden entrümpeln bei uns und lassen im selben Termin Möbel mitnehmen, einlagern oder in die neue Wohnung fahren. Sie brauchen dafür keine zweite Firma und keinen zweiten Termin.</p>
+          <div class="transport-panel-actions">
+            <a href="https://wa.me/491775792111?text=Hallo%20FastMove%2C%20ich%20br%C3%A4uchte%20einen%20Transport." target="_blank" rel="noopener" class="btn btn-primary btn-glow">Transport anfragen</a>
+            <a href="tel:+491775792111" class="btn btn-outline">0177 5792111</a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Karten -->
+      <div class="transport-grid">
+        <article class="transport-card reveal" id="umzug">
+          <span class="transport-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v9a1 1 0 001 1h4v-6h4v6h4a1 1 0 001-1v-9"/></svg>
+          </span>
+          <h3>Umzug</h3>
+          <p>Planung, Verpacken, Möbeltransport und Montage – privat wie gewerblich, termingerecht und versichert.</p>
+          <a href="https://wa.me/491775792111?text=Hallo%20FastMove%2C%20ich%20interessiere%20mich%20f%C3%BCr%20einen%20Umzug." target="_blank" rel="noopener" class="transport-link">Umzug anfragen →</a>
+        </article>
+
+        <article class="transport-card reveal" id="moebeltransport">
+          <span class="transport-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v-2a2 2 0 012-2h12a2 2 0 012 2v2"/><path d="M3 12h18v4a1 1 0 01-1 1H4a1 1 0 01-1-1v-4z"/><path d="M5 17v2M19 17v2"/></svg>
+          </span>
+          <h3>Möbeltransport</h3>
+          <p>Einzelne Schränke, das neue Sofa oder eine komplette Einrichtung – sicher verzurrt von A nach B.</p>
+          <a href="https://wa.me/491775792111?text=Hallo%20FastMove%2C%20ich%20br%C3%A4uchte%20einen%20M%C3%B6beltransport." target="_blank" rel="noopener" class="transport-link">Möbel transportieren →</a>
+        </article>
+
+        <article class="transport-card reveal" id="kurierdienst">
+          <span class="transport-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="7" width="13" height="9"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="6" cy="18" r="1.7"/><circle cx="17" cy="18" r="1.7"/></svg>
+          </span>
+          <h3>Kurier &amp; Lieferung</h3>
+          <p>Dokumente, Pakete, Sperrgut und Sondertransporte – schnell, diskret und termintreu im Großraum Hamburg.</p>
+          <a href="https://wa.me/491775792111?text=Hallo%20FastMove%2C%20ich%20interessiere%20mich%20f%C3%BCr%20den%20Kurierdienst." target="_blank" rel="noopener" class="transport-link">Sendung anfragen →</a>
+        </article>
+
+        <article class="transport-card reveal" id="firmenumzug">
+          <span class="transport-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="9" height="18"/><rect x="14" y="9" width="6" height="12"/><path d="M8 7h2M8 11h2M8 15h2"/></svg>
+          </span>
+          <h3>Firmen- &amp; Büroumzug</h3>
+          <p>Büro, Praxis oder Lager – wir ziehen außerhalb Ihrer Öffnungszeiten um, damit der Betrieb weiterläuft.</p>
+          <a href="https://wa.me/491775792111?text=Hallo%20FastMove%2C%20ich%20interessiere%20mich%20f%C3%BCr%20einen%20Firmenumzug." target="_blank" rel="noopener" class="transport-link">Firmenumzug anfragen →</a>
+        </article>
       </div>
     </div>
   </div>
@@ -730,7 +781,9 @@
       <a href="#kellerentruempelung">Kellerentrümpelung</a>
       <a href="#nachlassaufloesung">Nachlassauflösung</a>
       <a href="#umzug">Umzug</a>
-      <a href="#kurierdienst">Kurierdienst</a>
+      <a href="#moebeltransport">Möbeltransport</a>
+      <a href="#kurierdienst">Kurier &amp; Lieferung</a>
+      <a href="#firmenumzug">Firmen- &amp; Büroumzug</a>
     </div>
     <div class="footer-col">
       <h4>Unternehmen</h4>
