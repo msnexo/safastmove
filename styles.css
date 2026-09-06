@@ -30,6 +30,10 @@
   --shadow-soft: 0 20px 50px -20px rgba(8, 27, 50, 0.35);
   --shadow-glow: 0 0 0 1px rgba(79,195,255,0.25), 0 10px 40px -10px rgba(47,143,255,0.55);
 
+  --pb-bg: var(--off-white); --pb-card:#fff; --pb-rule: var(--gray-100);
+  --pb-acc: var(--blue-glow); --pb-tint:#e9f2ff; --pb-ink: var(--ink);
+  --pb-soft: var(--gray-700); --pb-head: var(--font-head);
+
   --ease: cubic-bezier(.16,.84,.44,1);
 }
 
@@ -612,3 +616,26 @@ section{ position: relative; }
   *{ animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
   html{ scroll-behavior:auto; }
 }
+
+/* ---------- Partnerprogramm-Teaser ---------- */
+.partnerband{ padding: 92px 0; background: var(--pb-bg); border-top:1px solid var(--pb-rule); }
+.partnerband-grid{ display:grid; grid-template-columns: 1.05fr .95fr; gap:44px; align-items:center; }
+.partnerband .kicker{ margin-bottom:12px; }
+.partnerband h2{ font-size: clamp(1.5rem,3vw,2.1rem); margin-bottom:14px; }
+.partnerband p.pb-lead{ color: var(--pb-soft); font-size:1rem; max-width:54ch; margin-bottom:26px; }
+.pb-cards{ display:grid; gap:14px; }
+.pb-card{
+  display:flex; gap:16px; align-items:flex-start;
+  background: var(--pb-card); border:1px solid var(--pb-rule); border-radius:14px; padding:20px 22px;
+  transition: transform .25s ease, border-color .25s ease;
+}
+.pb-card:hover{ transform: translateY(-4px); border-color: var(--pb-acc); }
+.pb-card i{
+  width:42px; height:42px; border-radius:11px; flex-shrink:0;
+  background: var(--pb-tint); color: var(--pb-acc);
+  display:flex; align-items:center; justify-content:center;
+}
+.pb-card svg{ width:21px; height:21px; }
+.pb-card b{ display:block; font-family: var(--pb-head); font-size:1rem; margin-bottom:3px; color: var(--pb-ink); }
+.pb-card span{ font-size:.91rem; color: var(--pb-soft); }
+@media (max-width: 880px){ .partnerband-grid{ grid-template-columns:1fr; gap:30px; } }
