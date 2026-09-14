@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     setTimeout(() => loader.classList.add('hidden'), 300);
   });
+  // Sicherheitsnetz: Ladebildschirm spaetestens nach 2,5 s ausblenden, auch wenn Karte oder Schriften haengen
+  setTimeout(() => loader && loader.classList.add('hidden'), 2500);
 
   /* ---------- Scroll progress bar ---------- */
   const progress = document.getElementById('scrollProgress');
