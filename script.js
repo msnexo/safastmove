@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cookies: document.getElementById('modalCookies'),
   };
   const openModal = (key) => {
-    Object.values(panels).forEach(p => p.hidden = true);
+    Object.values(panels).filter(Boolean).forEach(p => p.hidden = true);
     if (panels[key]) panels[key].hidden = false;
     modalOverlay.classList.add('open');
     document.body.style.overflow = 'hidden';
